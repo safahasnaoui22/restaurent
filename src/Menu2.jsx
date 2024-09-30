@@ -8,10 +8,10 @@ function Menu2() {
         <h1 className="hmenu">Our Menu</h1>
         <div className="container">
           <div className="btn">
-            <a href="/Menuitalien3.pdf" download="Menuitalien3.pdf">Italian Menu</a>
+            <a href="/it.pdf" download="it.pdf">Italian Menu</a>
           </div>
           <div className="btn">
-            <a href="/tones.pdf" download="tones.pdf">Tunisian Menu</a>
+            <a href="/tn.pdf" download="tn.pdf">Tunisian Menu</a>
           </div>
         </div>
       </div>
