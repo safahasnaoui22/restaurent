@@ -8,7 +8,7 @@ function Menu2() {
         <h1 className="hmenu">Our Menu</h1>
         <div className="container">
           <div className="btn">
-            <a href="/it.pdf" download="it.pdf">Italian Menu</a>
+            <a href="/MenuIT.V3.pdf" download="MenuIT.V3.pdf">Italian Menu</a>
           </div>
           <div className="btn">
             <a href="/tn.pdf" download="tn.pdf">Tunisian Menu</a>

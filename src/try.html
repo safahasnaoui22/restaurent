@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unique Document</title>
+    <style>
+        :root {
+            --padding-x: 2rem;
+            --padding-y: 2rem;
+        }
+
+        @media (min-width: 640px) {
+            :root {
+                --padding-y: 4rem;
+            }
+        }
+
+        @media (min-width: 1200px) {
+            :root {
+                --padding-x: 3rem;
+                --padding-y: 6rem;
+            }
+        }
+
+        .unique-section {
+            display: grid;
+            grid-template-rows: repeat(3, auto);
+            grid-template-columns: 4fr 4fr 5fr;
+            grid-template-areas: '. . header' 'image image details' 'image image .';
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .unique-section::after {
+            content: '';
+            grid-column: 2 / -1 !important;
+            grid-row: 1 / 3 !important;
+            position: relative !important;
+            z-index: 0 !important; 
+            background: rgb(233, 237, 243) !important;
+            box-shadow: 0 .2em 1em rgba(0, 0, 0, 0.2) !important;
+        }
+
+        .header-title {
+            grid-area: header;
+            padding-top: var(--padding-y);
+            padding-left: var(--padding-x);
+            font-family: 'Times New Roman', serif;
+            font-size: 4em;
+            margin: 0;
+            position: relative;
+            animation: slideIn 2s ease-in-out;
+            z-index: 1 !important; 
+        }
+
+        .details-content {
+            grid-area: details;
+            padding-bottom: var(--padding-y);
+            padding-left: var(--padding-x);
+            padding-right: var(--padding-x);
+            color: hsl(0, 0%, 25%);
+            z-index: 1 !important; 
+        }
+
+        .details-content p {
+            margin: 0 0 var(--padding-y);
+            line-height: 1.5;
+            z-index: 1 !important; 
+        }
+
+        .details-content a {
+            text-decoration: none;
+            border: 1px solid hsl(0, 0%, 70%);
+            border-radius: 1.5em;
+            padding: 1em 2.5em;
+            text-transform: uppercase;
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 0.05em;
+            color: inherit;
+            display: inline-block;
+            background-color: #fff;
+            z-index: 1 !important; 
+        }
+
+        .image-container {
+            grid-area: image;
+            position: relative;
+            z-index: 1 !important; 
+        }
+
+        .image-container img {
+            max-width: 100%;
+            vertical-align: middle;
+            box-shadow: 0 .3em 3em rgba(0, 0, 0, 0.1);
+            z-index: 1 !important; 
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .hero-container {
+            font-size: 16px;
+            background-color: #f8f9fa;
+            padding: 1.5em;
+        }
+    </style>
+</head>
+<container class="hero-container">
+    <div class="heroslider">
+
+    </div>
+    <section class="unique-section">
+       
+            <h1 class="header-title">Bella Vista</h1>
+
+            <div class="details-content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, molestiae suscipit, expedita magnam corporis modi assumenda consectetur error nulla, vero alias.</p>
+                <a href="#">Discover More</a>
+            </div>
+      
+       
+        <div class="image-container">
+            <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/446371593.jpg?k=6453045c6f065aca9a7f3a7c350caf7b32e776708f334c6ce9657a7fb0a77184&o=&hp=1" alt="Bella Vista Image" />
+        </div>
+    </section>
+</container>
+</html>
+background: linear-gradient(to top, #F2E2D4 0%, #D9BBAE 100%);
+<section class="section__container about__container" id="about">
+    <div class="about__image">
+      <img class="imgHero" src="http://lesoleilbellavista.com/wp-content/uploads/2024/08/Waterslides-3-scaled.jpg" alt="about" />
+    </div>
+    <div class="about__content">
+      <h2 style="color: #b3965a; text-align: right; font-variant: small-caps;" class="section__header">Les Meilleures Vacances Commencent Ici !
+  </h2>
+      <p class="section__description">
+      Nichée au cœur de Monastir, l'Hôtel Bella Vista offre un parfait mélange de confort et d'élégance. Notre hôtel dispose d'installations modernes, de vues imprenables et d'une atmosphère chaleureuse et accueillante. Que vous soyez ici pour une escapade détente ou un voyage d'affaires, notre équipe dévouée s'engage à vous offrir une expérience inoubliable. Profitez de nos chambres luxueuses, de nos options gastronomiques raffinées et de notre service exceptionnel qui rend chaque séjour mémorable
+      </p>
+      <div class="about__btn">
+        <button onclick="window.location.href='https://booking.lesoleilbellavista.com/cr.resa/htlww/Hotel_Search.aspx?user=3124&ilng=1&curr=1';" class="btn">
+  Réservation</button>
+      </div>
+    </div>
+  </section>
